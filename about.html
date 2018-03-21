@@ -52,32 +52,32 @@
       </div>
     </div>
 
-    <form class="container form">
+    <form class="container form" name="contactform" method="post" action="send_form_email.php">
       <h1>Want to work together?</h1>
       <div class="row">
         <div class="six columns">
           <label for="first_name">First Name *</label>
-          <input class="u-full-width" type="text" id="first_name">
+          <input class="u-full-width" type="text" id="first_name" required name="first_name">
         </div>
         <div class="six columns">
           <label for="last_name">Last Name *</label>
-          <input class="u-full-width" type="text" id="last_name">
+          <input class="u-full-width" type="text" id="last_name" required name="last_name">
         </div>
       </div>
       <div class="row">
         <div class="twelve columns">
           <label for="email">Email *</label>
-          <input class="u-full-width" type="email" id="email">
+          <input class="u-full-width" type="email" id="email" required name="email">
         </div>
       </div>
       <div class="row">
         <div class="twelve columns">
           <label for="subject">Subject *</label>
-          <input class="u-full-width" type="text" id="subject">
+          <input class="u-full-width" type="text" id="subject" required name="subject">
         </div>
       </div>
       <label for="message">Message</label>
-      <textarea class="u-full-width" id="message"></textarea>
+      <textarea class="u-full-width" id="message" required name="message"></textarea>
       <input class="form-button" type="submit" value="Submit">
     </form>
 

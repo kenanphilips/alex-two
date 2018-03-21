@@ -205,3 +205,7 @@ form label {
   padding: 0 20px !important;
   border: none !important;
 }
+
+form input, form textarea {
+  color: #000;
+}
